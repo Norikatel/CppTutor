@@ -1,0 +1,9 @@
+c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\bin\Debug\CppTutor.exe.config
+c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\bin\Debug\CppTutor.exe
+c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\bin\Debug\CppTutor.pdb
+c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.csprojResolveAssemblyReference.cache
+c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.Form1.resources
+c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.Properties.Resources.resources
+c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.csproj.GenerateResource.Cache
+c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.exe
+c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.pdb
