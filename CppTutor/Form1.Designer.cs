@@ -38,6 +38,7 @@
             this.AnswerText = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.ProblemLoad = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,13 +68,13 @@
             // 
             this.Check.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Check.Location = new System.Drawing.Point(425, 313);
+            this.Check.Location = new System.Drawing.Point(506, 313);
             this.Check.Name = "Check";
             this.Check.Size = new System.Drawing.Size(75, 23);
             this.Check.TabIndex = 2;
             this.Check.Text = "Проверить";
             this.Check.UseVisualStyleBackColor = true;
-            this.Check.Click += new System.EventHandler(this.button1_Click);
+            this.Check.Click += new System.EventHandler(this.Check_Click);
             // 
             // menuStrip1
             // 
@@ -121,11 +122,22 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // ProblemLoad
+            // 
+            this.ProblemLoad.Location = new System.Drawing.Point(376, 313);
+            this.ProblemLoad.Name = "ProblemLoad";
+            this.ProblemLoad.Size = new System.Drawing.Size(98, 23);
+            this.ProblemLoad.TabIndex = 5;
+            this.ProblemLoad.Text = "Задача/Теория";
+            this.ProblemLoad.UseVisualStyleBackColor = true;
+            this.ProblemLoad.Click += new System.EventHandler(this.ProblemLoad_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 343);
+            this.Controls.Add(this.ProblemLoad);
             this.Controls.Add(this.AnswerText);
             this.Controls.Add(this.Check);
             this.Controls.Add(this.CodeText);
@@ -153,6 +165,7 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.ToolStripMenuItem SaveToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button ProblemLoad;
     }
 }
 

@@ -10,8 +10,6 @@ namespace CppTutor
 {
     class Problem
     {
-        private static List<String> allSolv = new List<String>();
-
         private byte Checker(string inp, string outp)
         {
             var process = new Process
@@ -75,10 +73,6 @@ namespace CppTutor
 
         public string RunAndCheck(string code, List<KeyValuePair<string, string>> checkList)
         {
-            foreach (string s in allSolv)
-                if (String.Compare(code, s) == 0)
-                    return "Это решение уже отправлялось!";
-            allSolv.Add(code.Replace(" ", string.Empty));
             InFile(code);
             Compile();
             string outs = OutLogs();
@@ -100,19 +94,54 @@ namespace CppTutor
             return "Accepted";
         }
 
-        public string LoadProblem(int currentChapter)
+        public string LoadChapter(int currentChapter)
         {
+            return File.ReadAllText("Chapter" + currentChapter + "/ChapterTheory", Encoding.GetEncoding(1251));
+        }
+
+        public int CountChapter()
+        {
+            int i = 1;
             try
             {
-                return File.ReadAllText("Chapter" + currentChapter + "/ProblemText", Encoding.GetEncoding(1251));
+                while (true)
+                {
+                    File.ReadAllText("Chapter" + i + "/ChapterTheory", Encoding.GetEncoding(1251));
+                    i++;
+                }
             }
             catch (DirectoryNotFoundException e)
             {
-                return "Поздравляем, вы прошли курс!";
+                return i - 1;
             }
         }
 
-        public List<KeyValuePair<string, string>> LoadTests(int currentChapter)
+        public string LoadProblem(int currentChapter, int currentProblem)
+        {
+            return File.ReadAllText("Chapter" + currentChapter + "/Problem" + currentProblem + "/ProblemText",
+                Encoding.GetEncoding(1251));
+        }
+
+
+        public int CountProblem(int currentChapter)
+        {
+            int i = 1;
+            try
+            {
+                while (true)
+                {
+                    File.ReadAllText("Chapter" + currentChapter + "/Problem" + i + "/ProblemText",
+                    Encoding.GetEncoding(1251));
+                    i++;
+                }
+            }
+            catch (DirectoryNotFoundException e)
+            {
+                return i - 1;
+            }
+        }
+
+        public List<KeyValuePair<string, string>> LoadTests(int currentChapter, int currentProblem)
         {
             List<KeyValuePair<string, string>> checkList = new List<KeyValuePair<string, string>>();
             int numTest = 1;
@@ -121,12 +150,12 @@ namespace CppTutor
                 while (true)
                 {
                     checkList.Add(new KeyValuePair<string, string>(
-                        File.ReadAllText("Chapter" + currentChapter + "/ITest" + numTest),
-                        File.ReadAllText("Chapter" + currentChapter + "/OTest" + numTest)));
+                        File.ReadAllText("Chapter" + currentChapter + "/Problem" + currentProblem + "/ITest" + numTest),
+                        File.ReadAllText("Chapter" + currentChapter + "/Problem" + currentProblem + "/OTest" + numTest)));
                     numTest++;
                 }
             }
-            catch(Exception e) { return checkList; }
+            catch (Exception e) { return checkList; }
         }
     }
 }
