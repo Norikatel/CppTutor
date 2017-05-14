@@ -1,0 +1,26 @@
+#include <iostream>
+int main()
+{
+   int a, b;
+   std::cin >> a >> b;
+   std::cout << a + b << std::endl;
+   return 0;
+}
+
+#include <iostream>
+int main()
+{
+   int a, b;
+   std::cin >> a >> b;
+   std::cout << a * b << std::endl;
+   return 0;
+}
+
+#include <iostream>
+int main()
+{
+   char a;
+   std::cin >> a;
+   std::cout << (int)a << std::endl;
+   return 0;
+}

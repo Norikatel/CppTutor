@@ -106,12 +106,17 @@ namespace CppTutor
 
         private string SaveCurriculum()
         {
-            StringBuilder s = new StringBuilder();
+            StringBuilder sb = new StringBuilder();
             foreach (var p in curriculum)
-                s.Append(p.Key + ":" + p.Value + ",");
-            s.Remove(s.Length - 1, 1);
-            s.Append(";" + (currentStep + 1));
-            return s.ToString();
+                sb.Append(p.Key + ":" + p.Value + ",");
+            sb.Remove(sb.Length - 1, 1);
+            sb.Append(";" + (currentStep + 1));
+            return sb.ToString();
+        }
+
+        private void CreateCurriculumToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new CurriculumCreator().ShowDialog();
         }
     }
 }

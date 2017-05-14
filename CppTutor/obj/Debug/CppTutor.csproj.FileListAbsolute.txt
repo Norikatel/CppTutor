@@ -7,3 +7,4 @@ c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug
 c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.csproj.GenerateResource.Cache
 c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.exe
 c:\users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.pdb
+C:\Users\norik\documents\visual studio 2017\Projects\CppTutor\CppTutor\obj\Debug\CppTutor.CurriculumCreator.resources

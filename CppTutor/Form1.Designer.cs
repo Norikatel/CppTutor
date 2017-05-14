@@ -39,6 +39,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.ProblemLoad = new System.Windows.Forms.Button();
+            this.CreateCurriculumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,7 +91,8 @@
             // 
             this.менюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LoadToolStripMenuItem,
-            this.SaveToolStripMenuItem});
+            this.SaveToolStripMenuItem,
+            this.CreateCurriculumToolStripMenuItem});
             this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
             this.менюToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.менюToolStripMenuItem.Text = "Меню";
@@ -98,14 +100,14 @@
             // LoadToolStripMenuItem
             // 
             this.LoadToolStripMenuItem.Name = "LoadToolStripMenuItem";
-            this.LoadToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.LoadToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.LoadToolStripMenuItem.Text = "Загрузить сохранение";
             this.LoadToolStripMenuItem.Click += new System.EventHandler(this.LoadToolStripMenuItem_Click);
             // 
             // SaveToolStripMenuItem
             // 
             this.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem";
-            this.SaveToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
+            this.SaveToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.SaveToolStripMenuItem.Text = "Сохранить прогресс";
             this.SaveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
             // 
@@ -131,6 +133,13 @@
             this.ProblemLoad.Text = "Задача/Теория";
             this.ProblemLoad.UseVisualStyleBackColor = true;
             this.ProblemLoad.Click += new System.EventHandler(this.ProblemLoad_Click_1);
+            // 
+            // CreateCurriculumToolStripMenuItem
+            // 
+            this.CreateCurriculumToolStripMenuItem.Name = "CreateCurriculumToolStripMenuItem";
+            this.CreateCurriculumToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.CreateCurriculumToolStripMenuItem.Text = "Создать свой учебный план";
+            this.CreateCurriculumToolStripMenuItem.Click += new System.EventHandler(this.CreateCurriculumToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -166,6 +175,7 @@
         private System.Windows.Forms.ToolStripMenuItem SaveToolStripMenuItem;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button ProblemLoad;
+        private System.Windows.Forms.ToolStripMenuItem CreateCurriculumToolStripMenuItem;
     }
 }
 

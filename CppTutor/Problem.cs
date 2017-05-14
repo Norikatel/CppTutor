@@ -99,6 +99,11 @@ namespace CppTutor
             return File.ReadAllText("Chapter" + currentChapter + "/ChapterTheory", Encoding.GetEncoding(1251));
         }
 
+        public string LoadChapterInfo(int currentChapter)
+        {
+            return File.ReadAllText("Chapter" + currentChapter + "/info", Encoding.GetEncoding(1251));
+        }
+
         public int CountChapter()
         {
             int i = 1;
@@ -122,6 +127,11 @@ namespace CppTutor
                 Encoding.GetEncoding(1251));
         }
 
+        public string LoadProblemInfo(int currentChapter, int currentProblem)
+        {
+            return File.ReadAllText("Chapter" + currentChapter + "/Problem" + currentProblem + "/info",
+                Encoding.GetEncoding(1251));
+        }
 
         public int CountProblem(int currentChapter)
         {
