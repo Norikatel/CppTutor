@@ -1,6 +1,6 @@
 ﻿namespace CppTutor
 {
-    partial class Form1
+    partial class TutorForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -32,14 +32,14 @@
             this.CodeText = new System.Windows.Forms.RichTextBox();
             this.Check = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.менюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LoadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CreateCurriculumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AnswerText = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.ProblemLoad = new System.Windows.Forms.Button();
-            this.CreateCurriculumToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -80,22 +80,22 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.менюToolStripMenuItem});
+            this.MenuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(624, 24);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // менюToolStripMenuItem
+            // MenuToolStripMenuItem
             // 
-            this.менюToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LoadToolStripMenuItem,
             this.SaveToolStripMenuItem,
             this.CreateCurriculumToolStripMenuItem});
-            this.менюToolStripMenuItem.Name = "менюToolStripMenuItem";
-            this.менюToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
-            this.менюToolStripMenuItem.Text = "Меню";
+            this.MenuToolStripMenuItem.Name = "MenuToolStripMenuItem";
+            this.MenuToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
+            this.MenuToolStripMenuItem.Text = "Меню";
             // 
             // LoadToolStripMenuItem
             // 
@@ -110,6 +110,13 @@
             this.SaveToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
             this.SaveToolStripMenuItem.Text = "Сохранить прогресс";
             this.SaveToolStripMenuItem.Click += new System.EventHandler(this.SaveToolStripMenuItem_Click);
+            // 
+            // CreateCurriculumToolStripMenuItem
+            // 
+            this.CreateCurriculumToolStripMenuItem.Name = "CreateCurriculumToolStripMenuItem";
+            this.CreateCurriculumToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
+            this.CreateCurriculumToolStripMenuItem.Text = "Создать свой учебный план";
+            this.CreateCurriculumToolStripMenuItem.Click += new System.EventHandler(this.CreateCurriculumToolStripMenuItem_Click);
             // 
             // AnswerText
             // 
@@ -134,14 +141,7 @@
             this.ProblemLoad.UseVisualStyleBackColor = true;
             this.ProblemLoad.Click += new System.EventHandler(this.ProblemLoad_Click_1);
             // 
-            // CreateCurriculumToolStripMenuItem
-            // 
-            this.CreateCurriculumToolStripMenuItem.Name = "CreateCurriculumToolStripMenuItem";
-            this.CreateCurriculumToolStripMenuItem.Size = new System.Drawing.Size(228, 22);
-            this.CreateCurriculumToolStripMenuItem.Text = "Создать свой учебный план";
-            this.CreateCurriculumToolStripMenuItem.Click += new System.EventHandler(this.CreateCurriculumToolStripMenuItem_Click);
-            // 
-            // Form1
+            // TutorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,7 +153,7 @@
             this.Controls.Add(this.ProblemText);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
+            this.Name = "TutorForm";
             this.Text = "CppTutor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -168,7 +168,7 @@
         private System.Windows.Forms.RichTextBox CodeText;
         private System.Windows.Forms.Button Check;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem менюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem MenuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LoadToolStripMenuItem;
         private System.Windows.Forms.RichTextBox AnswerText;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;

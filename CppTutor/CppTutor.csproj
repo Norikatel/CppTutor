@@ -51,11 +51,11 @@
     <Compile Include="CurriculumCreator.Designer.cs">
       <DependentUpon>CurriculumCreator.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="TutorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TutorForm.Designer.cs">
+      <DependentUpon>TutorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Problem.cs" />
     <Compile Include="Program.cs" />
@@ -63,8 +63,8 @@
     <EmbeddedResource Include="CurriculumCreator.resx">
       <DependentUpon>CurriculumCreator.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="TutorForm.resx">
+      <DependentUpon>TutorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

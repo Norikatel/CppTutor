@@ -6,9 +6,8 @@ using System.Windows.Forms;
 
 namespace CppTutor
 {
-    public partial class Form1 : Form
+    public partial class TutorForm : Form
     {
-
         private int CurrentChapter
         {
             get { return curriculum[currentStep].Key; }
@@ -22,7 +21,7 @@ namespace CppTutor
         Problem problem = new Problem();
         List<KeyValuePair<int, int>> curriculum = new List<KeyValuePair<int, int>>();
 
-        public Form1()
+        public TutorForm()
         {
             InitializeComponent();
             for (int i = 1; i <= problem.CountChapter(); i++)
@@ -95,7 +94,7 @@ namespace CppTutor
 
         private void LoadCurriculum(string input)
         {
-            curriculum.RemoveAll(i => i is KeyValuePair<int, int>);
+            curriculum.Clear();
             string[] splitString = input.Split(';');
             currentStep = Convert.ToInt32(splitString[1]) - 1;
             splitString = splitString[0].Split(',');

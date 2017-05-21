@@ -1,8 +1,8 @@
 #include <iostream>
 int main()
 {
-   char a;
-   std::cin >> a;
-   std::cout << a << std::endl;
+   int a, b;
+   std::cin >> a >> b;
+   std::cout << a + b << std::endl;
    return 0;
 }
